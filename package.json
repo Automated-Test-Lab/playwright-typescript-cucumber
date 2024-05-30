@@ -1,0 +1,37 @@
+{
+  "name": "playwright-typescript-cucumber",
+  "version": "1.0.0",
+  "description": "Repositório base para automações de testes na camada end-to-end para o Autometed Test Lab",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automated-Test-Lab/playwright-typescript-cucumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Automated-Test-Lab/playwright-typescript-cucumber.git"
+  },
+  "homepage": "https://github.com/Automated-Test-Lab/playwright-typescript-cucumber#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "@faker-js/faker": "^8.0.2",
+    "@playwright/test": "^1.44.1",
+    "@types/cucumber": "^7.0.0",
+    "@types/node": "^20.12.13",
+    "allure-cucumberjs": "^2.4.0",
+    "allure-js-commons": "^2.4.0",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "test": "cucumber-js test",
+    "e2e:all": "cucumber-js features/*.feature",
+    "e2e:login": "cucumber-js features/login.feature",
+    "e2e:funds": "cucumber-js features/funds.feature"
+  },
+  "dependencies": {
+    "cucumber": "^6.0.7"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+.vscode/
+reports/*
+screenshots/*
+@rerun.txt
+usage.txt
+.DS_Store
+dummy.txt
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/tests-examples
+/tests
