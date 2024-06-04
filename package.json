@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/Automated-Test-Lab/playwright-typescript-cucumber#readme",
   "devDependencies": {
-    "@cucumber/cucumber": "^9.1.2",
+    "@cucumber/cucumber": "^9.6.0",
     "@faker-js/faker": "^8.0.2",
     "@playwright/test": "^1.44.1",
     "@types/cucumber": "^7.0.0",
@@ -23,7 +23,7 @@
     "allure-cucumberjs": "^2.4.0",
     "allure-js-commons": "^2.4.0",
     "dotenv": "^16.3.1",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   },
   "scripts": {
     "test": "cucumber-js test",
@@ -32,6 +32,8 @@
     "e2e:funds": "cucumber-js features/funds.feature"
   },
   "dependencies": {
-    "cucumber": "^6.0.7"
+    "cucumber": "^6.0.7",
+    "playwright": "^1.44.1",
+    "typescript": "^5.4.5"
   }
 }

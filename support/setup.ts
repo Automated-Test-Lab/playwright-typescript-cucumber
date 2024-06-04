@@ -5,7 +5,7 @@ require('dotenv').config();
 export var browser: BrowserContext;
 export var page: Page;
 
-const BASE_URL = ` https://demo.testfire.net`;
+const BASE_URL = `https://demo.testfire.net`;
 
 // Cucumber default timeout
 setDefaultTimeout(15_000);

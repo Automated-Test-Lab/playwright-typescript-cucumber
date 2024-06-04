@@ -1,0 +1,11 @@
+default:
+  format:
+    - 'json:./reports/cucumber.json'
+    - 'rerun:@rerun.txt'
+    #- 'usage:usage.txt'
+    - './allureReporter.ts:./dummy.txt'
+  require:
+    - './common/*.ts'
+    - './modules/**/steps.ts'
+  requireModule:
+    - 'ts-node/register'

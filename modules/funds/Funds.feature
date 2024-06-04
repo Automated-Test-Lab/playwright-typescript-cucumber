@@ -1,6 +1,7 @@
 # language: en
 
 @regression @funds
+
 Feature: Transfer Funds
 
     Background: Access the Funds Transfer page
