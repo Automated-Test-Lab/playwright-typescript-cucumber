@@ -26,13 +26,12 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "test": "cucumber-js test",
-    "e2e:all": "cucumber-js features/*.feature",
-    "e2e:login": "cucumber-js features/login.feature",
-    "e2e:funds": "cucumber-js features/funds.feature"
+    "test": "npx cucumber-js test",
+    "all": "npx cucumber-js features/*.feature",
+    "login": "npx cucumber-js ./modules/login/Login.feature",
+    "funds": "npx cucumber-js ./modules/funds/Funds.feature"
   },
   "dependencies": {
-    "cucumber": "^6.0.7",
     "playwright": "^1.44.1",
     "typescript": "^5.4.5"
   }

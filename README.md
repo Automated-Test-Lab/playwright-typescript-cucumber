@@ -69,7 +69,7 @@ Using the Page Objects design pattern, which aims to separate elements into diff
 - Run the project by Cucumber:
 
 ```bash
-  $ npx cucumber-js ./features/example.feature
+  $ npm test
 ```
 
 

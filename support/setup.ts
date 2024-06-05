@@ -32,6 +32,6 @@ export async function login() {
     await page.goto('/login.jsp');
     await page.locator('[id="uid"]').fill(username);
     await page.locator('[id="passw"]').fill(password);
-    await page.locator('[type="submit"]').click();
+    await page.locator('[name="btnSubmit"]').click();
     await page.waitForURL('/bank/main.jsp', {timeout: 120000});
 }
