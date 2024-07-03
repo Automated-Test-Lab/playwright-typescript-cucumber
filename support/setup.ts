@@ -7,7 +7,7 @@ export var page: Page;
 
 const BASE_URL = `https://demo.testfire.net`;
 
-// Cucumber default timeout
+// Cucumber default timeout   
 setDefaultTimeout(15_000);
 
 // Open Browser
@@ -17,10 +17,11 @@ export async function launchBrowser(): Promise<void> {
       headless: false,
       locale: 'pt-BR',
       baseURL: BASE_URL,
-      viewport: { width: 1366, height: 768 }
+      viewport: { width: 1366, height: 768 },
+      ignoreHTTPSErrors: true
     }
   );
-  page = await browser.newPage();
+  page = await browser.newPage(); 
 };
 
 // Login on Testfire
