@@ -31,5 +31,20 @@ When('click to Transfer Money', async function () {
 
 });
 
-Then('system returns {string}', async function (message) {
+Then('system returns success message {string}', async function (message) {
+  await expect(page.locator(fundsLoc.CONTENT_MAIN)).toContainText(message);
+
+});
+
+// --------------------------------@TC06-------------------------------------
+
+Then('system returns error message {string}', async function (message) {
+  page.on('dialog', async dialog => {
+    // Validate dialog text
+    expect(dialog.message()).toBe(message);
+
+    // close dialog
+    await dialog.dismiss(); 
+  
+  });
 });
