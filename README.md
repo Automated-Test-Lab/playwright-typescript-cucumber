@@ -66,10 +66,10 @@ Using the Page Objects design pattern, which aims to separate elements into diff
   $ npm install -g allure-commandline      
 ```
 
-- Run the project by Cucumber:
+- Run tests:
 
 ```bash
-  $ npm test
+  $ npm run all
 ```
 
 
