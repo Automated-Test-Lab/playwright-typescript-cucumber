@@ -1,6 +1,6 @@
 # language: en
 
-@regression @funds
+@regression @transfer
 
 Feature: Transfer Funds
 

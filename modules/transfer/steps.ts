@@ -1,13 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber'
 import { page } from '../../support/setup'
 import { expect } from '@playwright/test'
-import { fa, fakerPT_BR as faker } from '@faker-js/faker'
 import fundsLoc from './locators'
-
-var logicNumber = faker.string.numeric(8)
-
-// --------------------------common steps-----------------------------------------
-
 
 // --------------------------------@TC05-------------------------------------
 
@@ -34,17 +28,4 @@ When('click to Transfer Money', async function () {
 Then('system returns success message {string}', async function (message) {
   await expect(page.locator(fundsLoc.CONTENT_MAIN)).toContainText(message);
 
-});
-
-// --------------------------------@TC06-------------------------------------
-
-Then('system returns error message {string}', async function (message) {
-  page.on('dialog', async dialog => {
-    // Validate dialog text
-    expect(dialog.message()).toBe(message);
-
-    // close dialog
-    await dialog.dismiss(); 
-  
-  });
 });

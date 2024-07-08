@@ -29,7 +29,8 @@
     "test": "npx cucumber-js test",
     "all": "npx cucumber-js features/*.feature",
     "login": "npx cucumber-js ./modules/login/Login.feature",
-    "funds": "npx cucumber-js ./modules/funds/Funds.feature"
+    "funds": "npx cucumber-js ./modules/funds/Funds.feature",
+    "administration": "npx cucumber-js ./modules/administration/Administration.feature"
   },
   "dependencies": {
     "playwright": "^1.44.1",
