@@ -23,5 +23,5 @@ When('click to login', async function () {
 });
 
 Then('system returns {string}', async function (message) {
-    await expect(page.locator(loginLoc.CONTENT_MAIN)).toContainText(message);  
+    await expect(page.locator(loginLoc.CONTENT_MAIN)).toContainText(message);
 });

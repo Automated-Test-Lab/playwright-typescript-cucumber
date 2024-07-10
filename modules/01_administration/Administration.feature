@@ -7,8 +7,8 @@ Feature: Administration Users
     Background: Access the Edit Users page
         Given I access the Edit Users page
 
-@TC04 @ExceptionScenario
-Scenario Outline: Trying to change user password with different passwords
+    @TC01 @ExceptionScenario
+    Scenario Outline: Trying to change user password with different passwords
         And fill new "<password>"
         And fill confirm new "<password1>"
         When click to change password

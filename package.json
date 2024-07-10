@@ -27,9 +27,10 @@
   },
   "scripts": {
     "all": "npx cucumber-js ./modules/**/*.feature",
-    "administration": "npx cucumber-js ./modules/administration/Administration.feature",
-    "login": "npx cucumber-js ./modules/login/Login.feature",
-    "transfer": "npx cucumber-js ./modules/transfer/Transfer.feature"
+    "administration": "npx cucumber-js ./modules/01_administration/Administration.feature",
+    "transfer": "npx cucumber-js ./modules/02_transfer/Transfer.feature",
+    "feedback": "npx cucumber-js ./modules/03_feedback/Feedback.feature",
+    "login": "npx cucumber-js ./modules/04_login/Login.feature"
   },
   "dependencies": {
     "playwright": "^1.44.1",

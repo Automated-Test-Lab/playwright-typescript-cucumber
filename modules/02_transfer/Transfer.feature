@@ -7,7 +7,7 @@ Feature: Transfer Funds
     Background: Access the Funds Transfer page
         Given I access the Funds Transfer page
 
-    @TC05 @BasicScenario
+    @TC02 @BasicScenario
     Scenario: Make a successful transfer
         And select from account "800001 Checking"
         And select to account "800000 Corporate"
@@ -15,7 +15,7 @@ Feature: Transfer Funds
         When click to Transfer Money
         Then system returns success message "was successfully transferred"
 
-    @TC06 @ExceptionScenario
+    @TC03 @ExceptionScenario
     Scenario: Trying to transfer funds to the same account
         And select from account "800001 Checking"
         And select to account "800001 Checking"

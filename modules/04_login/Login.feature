@@ -7,7 +7,7 @@ Feature: Login
     Background: Sign off
         Given that I log out of the system
 
-    @TC02 @ExceptionScenario
+    @TC05 @ExceptionScenario
     Scenario Outline: Trying to enter incorrect username
         And fill username "<username>"
         And fill password "<password>"
@@ -17,7 +17,7 @@ Feature: Login
         |username   | password  |
         |adminXX    | admin     |  
 
-    @TC03 @ExceptionScenario
+    @TC06 @ExceptionScenario
     Scenario Outline: Trying to enter incorrect password
         And fill username "<username>"
         And fill password "<password>"
