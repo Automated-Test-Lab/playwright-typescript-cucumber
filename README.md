@@ -1,7 +1,7 @@
 
 # Automated Test Lab 🧪 | Playwright + TS + Cucumber
 
-This project aims to provide test automation artifacts in the end-to-end layer using the TypeScript language and Playwright, Cucumber framework.
+This project aims to provide test automation artifacts in the end-to-end layer using the Type Script language and Playwright, Cucumber framework.
 
 ## ☑️ You must have:
 
